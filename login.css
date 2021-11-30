@@ -1,0 +1,227 @@
+
+    @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+    body{
+    /* background: rgb(18,18,18); */
+    font-family: 'monteserrat', sans-serif;
+    color: #ffffff;
+    font-weight: bolder;
+}
+    a{
+    text-decoration: none;
+    color: #1DB954;
+}
+
+a:hover{
+    color: #29db67;
+}
+
+.container{
+    display: flex;
+    background: #ffffff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top:80px;
+}
+
+/* Header */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border-bottom: lightgray solid 1px;
+    height: 105px;
+    margin-bottom: 40px;
+    width: 180%;
+}
+
+header img{
+    width: 190px;
+}
+
+/* Login Buttons */
+h2{
+    font-size: 16px;
+    padding-bottom: 15px;
+    font-weight: bolder;
+}
+.head{
+    margin-top: 20px;
+}
+.btn-pill{
+    letter-spacing: 4px;
+    border-radius: 30px;
+    width: 600px;
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-transform: uppercase;
+    /* width: 400px; */
+}
+.btn-outline-dark{
+    border:solid 2px;
+
+}
+.d-grid{
+    justify-content: center;
+}
+.form-text{
+    width: 400px;
+}
+fieldset{
+    padding-left: 4px;
+}
+
+/* OR */
+.or{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    
+}
+
+.or .bar{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-bottom: lightgray 1px solid;
+
+}
+
+.or h3{
+    margin: 0 20px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+
+/* Login Buttons */
+.login{
+    display: inline;
+    width: 100%;
+    margin-bottom: 20px;
+}
+#defaultCheck1{
+    background-color: #1DB954;
+}
+
+#input{
+    width: 600px;
+}
+.checkbox {
+    -webkit-appearance:none;
+    width:20px;
+    height:20px;
+    background:rgb(36,36,36);
+    border-radius:5px;
+    border:1px solid #1DB954;
+    margin-top: 10px;
+}
+
+
+.login{
+    width: 50%;
+    height: 50px;
+    border-radius: 90px;
+    background: #1DB954;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+}
+
+.login button:hover{
+    background: rgb(37, 221, 102);
+}
+
+
+p{
+    padding: 10px 0;
+    font-size: 10px;
+    text-align: center;
+}
+.container2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding-top:10px;
+    width: 55%;
+    
+
+}
+.container{
+    width: 300%;
+    background: white;
+
+}
+.wrapper{
+    position: relative;
+    height: 30px;
+    width: 100%;
+}
+.wrapper img{
+    position: absolute;
+    right:0;
+    bottom: 40px;
+    height: 40px;
+
+}
+
+.captchaimg{
+    box-shadow:6px  5px 9px 2px #888888 
+}
+.loginp{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.form-check-label{
+    font-size: 18px;
+    padding: 1px;
+    font-weight: lighter;
+}
+.ml-0{
+    width: 422px;
+    margin-left: -2px;
+}
+
+@media screen and (max-width: 765px) {
+    .btn-pill{
+      width: 400px;
+    }
+  }
+  @media screen and (min-width: 375px) {
+    .container2{
+      max-width: 375px;
+    }
+    .btn-pill{
+        width: 370px;
+    }
+  }
+
+  @media screen and (max-width: 485px) {
+  .container{
+    overflow: hidden;
+    max-width: 380px;
+   }
+}
+
+@media screen and (max-width: 575px) {
+    .container{
+      overflow: hidden;
+      max-width: 380px;
+     }
+  }
