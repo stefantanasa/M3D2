@@ -12,8 +12,6 @@ newRow.innerHTML += `
 getNode[0].appendChild(newRow);
 console.log(newRow);
 
-
-
 const addCards = () => {
   fetch("https://striveschool-api.herokuapp.com/api/deezer/search?q=nirvana")
     .then((response) => response.json())
@@ -25,20 +23,22 @@ const addCards = () => {
       getNode[0].appendChild(getNewRow);
 
       for (i = 0; i < content.data.length; i++) {
+        r = Math.floor(Math.random() * content.data.length);
+
         let newCard = document.createElement("div");
         newCard.className = "col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3";
         newCard.innerHTML = `
     <div class="card p-3">
           <img
             height="150px"
-            src="${content.data[i].album.cover}"
+            src="${content.data[r].album.cover}"
             class="card-img-top"
-            alt="${content.data[i].album.title}"
+            alt="${content.data[r].album.title}"
           />
           <div class="card-body p-0 mt-2">
-            <h5 class="card-title">${content.data[i].title_short}</h5>
+            <h5 class="card-title">${content.data[r].title_short}</h5>
             <p class="card-text text-muted">
-            ${content.data[i].album.title} album
+            ${content.data[r].album.title} album
             </p>
           </div>
           <!-- play button -->
