@@ -60,3 +60,9 @@ const addCards = () => {
       }
     });
 };
+let newButton = document.createElement("button");
+newButton.classList = "btn btn-danger";
+newButton.innerText = "Load More songs";
+newButton.addEventListener("click", addCards);
+
+getNode[0].appendChild(newButton);
